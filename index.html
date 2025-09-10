@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    /* ===== Global Styles ===== */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #eef2f7;
+      color: #333;
+    }
+
+    /* ===== Header ===== */
+    header {
+      background: linear-gradient(135deg, #222, #444);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      margin: 5px 0 15px;
+      font-size: 1.1em;
+      color: #ccc;
+    }
+
+    /* ===== Navigation ===== */
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffd369;
+    }
+
+    /* ===== Sections ===== */
+    section {
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease-in-out;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* ===== About Section ===== */
+    .about-container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .about-container img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .about-container p {
+      flex: 1;
+      font-size: 1.05em;
+      line-height: 1.6;
+    }
+
+    /* ===== Skills ===== */
+    #skills ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    #skills li {
+      background: #222;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-size: 0.95em;
+      transition: background 0.3s;
+    }
+    #skills li:hover {
+      background: #444;
+    }
+
+    /* ===== Projects ===== */
+    #projects ul {
+      list-style: disc inside;
+      padding-left: 10px;
+    }
+
+    /* ===== Contact ===== */
+    #contact p {
+      margin: 8px 0;
+      font-size: 1.05em;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      text-align: center;
+      background: #222;
+      color: white;
+      padding: 15px;
+      margin-top: 30px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hi, I'm P. Sri Ganesh</h1>
+    <p>Web Developer | Designer | Coder</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="card">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <!-- Your new uploaded photo -->
+      <img src="1000035560.jpg" alt="P. Sri Ganesh Photo">
+      <p>Hello! I'm a passionate web developer who loves creating simple and useful websites.
+         I enjoy coding and learning new technologies. My goal is to build projects that
+         make life easier and more enjoyable for people.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="card">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Flutter</li>
+      <li>Dart</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="card">
+    <h2>Projects</h2>
+    <ul>
+      <li>Portfolio Website</li>
+      <li>College ID Card App</li>
+      <li>Basic Coffee Ordering App</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="card">
+    <h2>Contact</h2>
+    <p>Email: yourname@example.com</p>
+    <p>LinkedIn: linkedin.com/in/yourname</p>
+  </section>
+
+  <footer>
+    <p>© 2025 P. Sri Ganesh. All rights reserved.</p>
+  </footer>
+</body>
+</html>
